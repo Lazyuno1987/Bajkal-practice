@@ -1,0 +1,264 @@
+
+:root{
+--first-color:#FFFFFF;
+--btn-color:rgba(255, 255, 255, 0.5);
+--second-color: #000000;
+}
+body{
+    font-family: "Roboto", sans-serif ;
+
+}
+
+p, h1, h2, h3, h4{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button{
+    cursor: pointer;
+}
+
+.link{
+    cursor: pointer;
+}
+
+.list{
+list-style: none;
+}
+.link{
+    text-decoration: none;
+}                                                             
+
+/* Стилизация хедера */
+
+.header{
+    background: gray;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+.header-img{
+    padding-top: 13px;
+    padding-bottom: 14px;
+}
+
+.header-logos{
+    font-family: "PT Serif";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.35;
+    color: var(--first-color);
+    margin-left: 20px;
+    margin-right: auto;
+    padding-top: 15px;
+}
+
+.header-logo{
+font-weight: 500;
+font-size: 18px;
+line-height:calc(21 / 18);
+color: var(--first-color);
+margin-left: 20px;
+margin-right: auto;
+padding-bottom: 17px;
+}
+
+.header-link{
+    font-weight: 700;
+    font-size: 18px;
+    line-height:calc(23 / 18);
+    color: var(--first-color);
+    margin-right: 69px;
+    margin-left: auto;
+    padding-top: 28px;
+    padding-bottom: 30px;
+}
+
+.header-contact:not(:last-child){
+    margin-right: 69px;
+    margin-left: auto;
+}
+
+
+.header-btn{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    color: var(--first-color);
+    min-width: 186px;
+    min-height: 44px;
+    border-radius: 22px;
+    border-color: var(--first-color);
+    padding: 15px 6px;
+    background-color: transparent;
+    
+}
+
+
+.header-contact{
+    display: flex;
+}
+
+/* Стилизация main */
+
+.main{
+    background-color: gray;
+}
+
+.main-list{
+display: flex;
+justify-content: flex-start;
+margin-bottom: 106px;
+padding-top: 20px;
+}
+.main-link{
+font-weight: 400;
+font-size: 16px;
+line-height:calc(19 / 16);
+color: var(--first-color);
+margin-right: 32px;
+
+}
+
+.main-link:not(:last-child){
+    margin-right: 32px;
+}
+
+.main-title{
+font-family: "PT Serif";
+font-weight: 700;
+font-size: 90px;
+line-height:calc(117 / 90);
+color: var(--first-color);
+max-width: 724px;
+margin-right: auto;
+margin-bottom: 8px;
+}
+
+.main-text{
+font-weight: 400;
+font-size: 20px;
+line-height:calc(28 / 20);
+color: var(--first-color);
+max-width: 562px;
+margin-bottom: 113px;
+}
+
+.main-btn{
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: var(--first-color);
+text-transform: uppercase;
+border-radius: 30px;
+border-color:var(--btn-color) ;
+min-width: 250px;
+min-height: 60px;
+background-color: transparent;
+padding: 19px 53px 20px;
+margin-bottom: 257px;
+}
+
+/* Стилизация about */
+
+.about{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin: 0 auto;
+}
+
+.about-list{
+display: flex;
+flex-wrap: wrap;
+margin-right: -32px;
+margin-bottom: -32px;
+}
+
+.about-item{
+    margin-right: 32px;
+    margin-bottom: 32px;
+    max-width: 256px;
+    border-radius: 6px;
+    border: 1px solid #D9D9DE
+}
+
+
+
+/* .about-item:not(:nth-child(4n)){
+    margin-right: 32px;
+}
+
+.about-item:not(:nth-last-child(-n+4)){
+    margin-bottom: 32px;
+} */
+
+.about-title{
+font-weight: 500;
+font-size: 16px;
+line-height:calc(19 / 16);
+color:var(--second-color) ;
+margin-bottom: 16px;
+padding-left: 19px;
+padding-right: 19px;
+}
+
+.about-img{
+    margin-bottom: 13px;
+}
+
+/*  Стилизация after-about */
+
+.after-about{
+padding-top: 44px;
+padding-bottom: 80px;
+}
+
+.after-about-title{
+font-family: "PT Serif";
+font-style: 700;
+font-size: 30px;
+line-height:calc(39 / 30);
+columns: var(--second-color);
+text-align: center;
+}
+
+.after-about-list{
+display: flex;
+flex-wrap: wrap;
+}
+
+.after-about-text{
+font-weight: 400;
+font-size: 16px;
+line-height:calc(21 / 16);
+color: var(--second-color);
+}
