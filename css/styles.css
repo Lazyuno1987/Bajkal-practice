@@ -3,7 +3,10 @@
 --first-color:#FFFFFF;
 --btn-color:rgba(255, 255, 255, 0.5);
 --second-color: #000000;
+--text-color:#333333;
 }
+
+
 body{
     font-family: "Roboto", sans-serif ;
 
@@ -21,9 +24,9 @@ img{
     display: block;
 }
 .container{
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 1120px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
     margin: 0 auto;
 }
 
@@ -46,14 +49,12 @@ img{
 
 .link{
     cursor: pointer;
+    text-decoration: none;
 }
 
 .list{
 list-style: none;
 }
-.link{
-    text-decoration: none;
-}                                                             
 
 /* Стилизация хедера */
 
@@ -199,13 +200,12 @@ margin-bottom: 257px;
 .about-list{
 display: flex;
 flex-wrap: wrap;
-margin-right: -32px;
-margin-bottom: -32px;
+/* margin-right: -32px;
+margin-bottom: -32px; */
 }
 
 .about-item{
-    margin-right: 32px;
-    margin-bottom: 32px;
+   
     max-width: 256px;
     border-radius: 6px;
     border: 1px solid #D9D9DE
@@ -213,13 +213,13 @@ margin-bottom: -32px;
 
 
 
-/* .about-item:not(:nth-child(4n)){
+.about-item:not(:nth-child(4n)){
     margin-right: 32px;
 }
 
 .about-item:not(:nth-last-child(-n+4)){
     margin-bottom: 32px;
-} */
+}
 
 .about-title{
 font-weight: 500;
@@ -244,10 +244,10 @@ padding-bottom: 80px;
 
 .after-about-title{
 font-family: "PT Serif";
-font-style: 700;
+font-weight: 700;
 font-size: 30px;
 line-height:calc(39 / 30);
-columns: var(--second-color);
+color: var(--second-color);
 text-align: center;
 }
 
@@ -256,9 +256,184 @@ display: flex;
 flex-wrap: wrap;
 }
 
+.after-about-item{
+    max-width: 256px;
+
+}
+
 .after-about-text{
 font-weight: 400;
 font-size: 16px;
 line-height:calc(21 / 16);
 color: var(--second-color);
+}
+
+ /* Стилизация galery */
+
+
+.galery{
+    padding-top: 76px;
+    padding-bottom: 80px;
+}
+
+/* Стилизация carta */
+
+.carta{
+    padding-top: 70px;
+    padding-bottom: 84px;
+}
+
+.carta-title{
+font-family: "PT Serif";
+font-style: 700;
+font-size: 30px;
+line-height: calc(39 / 30);
+color: var(--second-color);
+text-align: center;
+margin-bottom: 37px;
+}
+
+.carta-titles{
+font-family: "PT Serif";
+font-style: 700;
+font-size: 30px;
+line-height: calc(40 / 30);
+color: var(--second-color);    
+}
+
+.carta-text{
+font-weight: 400;
+font-size: 18px;
+line-height:calc(25 / 18);
+color:var(--text-color) ;
+}
+
+.carta-link{
+font-weight: 400;
+font-size: 16px;
+line-height:calc(19 / 16);
+color:#76767A ;
+
+}
+
+/* Стилизация photos */
+
+.photos{
+    padding-top: 39px;
+    padding-bottom: 85px;
+    
+}
+
+.photos-title{
+    font-family: "PT Serif";
+    font-style: 700;
+    font-size: 30px;
+    line-height: calc(39 / 30);
+    color: var(--second-color);
+}
+
+.photos-link{
+font-weight: 400;
+font-size: 16px;
+line-height:calc(19 / 16);
+color:rgba#0050B2 ;
+
+}
+
+.photos-btn{
+width: 44px;
+height: 44px;
+border-radius: 22px; 
+border-color:  #0061D9;
+}
+
+.photos-befor{
+    display: flex;
+    align-items: center;
+    margin-bottom: 52px;
+    justify-content: flex-end;
+}
+.photo-list-first{
+    display: flex;
+    
+}
+.photo-item-first{
+  
+}
+.photo-item-first:not(:last-child){
+    margin-right: 16px;
+}
+
+.photos-title{
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.photos-link{
+    margin-right: 55px;
+}
+
+.photo-list-sec{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photos-item{
+    width: 352px;
+}
+.photos-item:not(:nth-child(3n)){
+    margin-right: 32px;
+}
+.photos-item:not(:nth-last-child(-n+3)){
+    margin-bottom: 32px;
+}
+
+/* Стилизация after-cart */
+
+.after-cart{
+    padding-top: 75px;
+    padding-bottom: 85px;
+}
+
+.after-cart-title{
+font-family: "PT Serif";
+font-weight: 700;
+font-size: 44px;
+line-height: calc(57 / 44);
+color: var(--second-color);
+text-align: center;
+margin-bottom: 45px;
+}
+
+.after-cart-text{
+font-weight: 400;
+font-size: 18;
+line-height: calc(25 / 18);
+color: var(--text-color);
+}
+
+/* Стилизация section-about */
+
+.section-about{
+    padding-top: 41px;
+    padding-bottom: 85px;
+}
+
+.section-about-text{
+font-weight: 500;
+font-style: 20px;
+line-height: calc(26 / 20);
+color: var(--second-color);
+}
+
+.spans{
+font-style: "PT Serif";
+font-weight: 700;
+font-style: 58px;
+line-height: calc(75 / 58);
+color: #64BD22;
+}
+
+.section-about-cont{
+    display: flex;
 }
