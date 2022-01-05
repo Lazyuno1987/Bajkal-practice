@@ -58,8 +58,15 @@ list-style: none;
 
 /* Стилизация хедера */
 
+.section-phon{
+    background-image:url(/imagies/phon.jpg);
+    width: 1920px;
+}
+
 .header{
     background: gray;
+    border-bottom: solid #D9D9DE;
+    border-width: 1px;
 }
 
 .header-container{
@@ -285,7 +292,7 @@ color: var(--second-color);
 
 .carta-title{
 font-family: "PT Serif";
-font-style: 700;
+font-weight: 700;
 font-size: 30px;
 line-height: calc(39 / 30);
 color: var(--second-color);
@@ -295,7 +302,7 @@ margin-bottom: 37px;
 
 .carta-titles{
 font-family: "PT Serif";
-font-style: 700;
+font-weight: 700;
 font-size: 30px;
 line-height: calc(40 / 30);
 color: var(--second-color);    
@@ -357,9 +364,7 @@ border-color:  #0061D9;
     display: flex;
     
 }
-.photo-item-first{
-  
-}
+
 .photo-item-first:not(:last-child){
     margin-right: 16px;
 }
@@ -407,7 +412,7 @@ margin-bottom: 45px;
 
 .after-cart-text{
 font-weight: 400;
-font-size: 18;
+font-size: 18px;
 line-height: calc(25 / 18);
 color: var(--text-color);
 }
@@ -421,7 +426,7 @@ color: var(--text-color);
 
 .section-about-text{
 font-weight: 500;
-font-style: 20px;
+font-size: 20px;
 line-height: calc(26 / 20);
 color: var(--second-color);
 }
@@ -429,7 +434,7 @@ color: var(--second-color);
 .spans{
 font-style: "PT Serif";
 font-weight: 700;
-font-style: 58px;
+font-size:58px;
 line-height: calc(75 / 58);
 color: #64BD22;
 }
