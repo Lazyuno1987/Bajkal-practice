@@ -59,14 +59,17 @@ list-style: none;
 /* Стилизация хедера */
 
 .section-phon{
-    background-image:url(/imagies/phon.jpg);
+    background-color: gray;
+    background-image:url(../imagies/phon.jpg);
     width: 1920px;
+    background-size: cover;
 }
 
 .header{
-    background: gray;
     border-bottom: solid #D9D9DE;
     border-width: 1px;
+    padding-top: 13px;
+    padding-bottom: 14px;
 }
 
 .header-container{
@@ -128,6 +131,7 @@ padding-bottom: 17px;
     border-color: var(--first-color);
     padding: 15px 6px;
     background-color: transparent;
+    border-width: 1px;
     
 }
 
@@ -137,10 +141,11 @@ padding-bottom: 17px;
 }
 
 /* Стилизация main */
-
 .main{
-    background-color: gray;
+    padding-top: 20px;
+    padding-bottom: 33px;
 }
+
 
 .main-list{
 display: flex;
@@ -201,14 +206,11 @@ margin-bottom: 257px;
 .about{
     padding-top: 64px;
     padding-bottom: 64px;
-    margin: 0 auto;
 }
 
 .about-list{
 display: flex;
 flex-wrap: wrap;
-/* margin-right: -32px;
-margin-bottom: -32px; */
 }
 
 .about-item{
@@ -256,15 +258,38 @@ font-size: 30px;
 line-height:calc(39 / 30);
 color: var(--second-color);
 text-align: center;
+margin-bottom: 50px;
 }
 
 .after-about-list{
 display: flex;
+justify-content: space-between;
+align-items: flex-start;
 flex-wrap: wrap;
+
 }
 
 .after-about-item{
-    max-width: 256px;
+    justify-content:center;
+align-items:center ;
+flex-wrap: wrap;
+
+
+
+}
+
+.after-about-item::before{
+    display: block;
+    content:"" ;
+    height: 84px;
+    width: 84px;
+    
+    
+
+}
+
+.after-about-item:nth-child(1)::before{
+ background-image: url("../imagies/icons.svg#icon-Group-42");
 
 }
 
@@ -273,6 +298,9 @@ font-weight: 400;
 font-size: 16px;
 line-height:calc(21 / 16);
 color: var(--second-color);
+max-width: 256px;
+    max-height: 65px;
+
 }
 
  /* Стилизация galery */
@@ -281,6 +309,92 @@ color: var(--second-color);
 .galery{
     padding-top: 76px;
     padding-bottom: 80px;
+}
+
+.galery-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galery-items{
+    display: flex;
+    width: 256px;
+    height: 256px; 
+    padding-left: 17px;
+    padding-top: 16px;  
+
+}
+.galery-items:not(:nth-child(-n+4)){
+    margin-bottom: 32px;
+}
+
+
+.galery-items:nth-child(1) {
+    background-image: url(../imagies/galery/Зимний\ однодневный\ тур\ на\ Чивыркуйский\ залив\ 1\ \(2\)\ \(1\).jpg) ;
+}
+
+.galery-items:nth-child(2) {
+    background-image: url(../imagies/galery/Зимний\ однодневный\ тур\ на\ остров\ Ольхон\ 2\ \(2\)\ \(1\).jpg);
+}
+
+.galery-items:nth-child(3){
+    background-image: url(../imagies/galery/Экскурсия\ в\ Иволгинский\ дацан\ 1\ \(2\)\ \(1\).jpg);
+width: 544px;
+height: 544px;
+}
+
+.galery-items:nth-child(4){
+    background-image: url(../imagies/galery/Обзорная\ экскурсия\ по\ Улан-Удэ\ 1\ \(2\)\ \(1\).jpg);
+}
+
+.galery-items:nth-child(5){
+    background-image: url(../imagies/galery/Эко-отель\ «Байкальское\ шале»\ 1\ \(1\).jpg);
+}
+.galery-items:nth-child(6){
+    background-image: url(../imagies/galery/Летний\ однодневный\ тур\ в\ Чивыркуйский\ залив\ 1\ \(1\).jpg);
+}
+
+.galery-items:nth-child(7){
+    background-image: url(../imagies/galery/Отель\ «Белая\ Карета»\,\ с\ 1\ \(1\).jpg);
+}
+
+.galery-items:nth-child(8){
+    background-image: url(../imagies/galery/Однодневная\ поездка\ на\ Байкал\ «Байкальская\ Гавань»\ 1\ \(1\).jpg);
+}
+
+.galery-items:nth-child(9){
+    background-image: url(../imagies/galery/Парк-отель\ «Сагаан-Морин»\,\ с\ 1\ \(1\).jpg);
+}
+
+.galery-items:nth-child(10){
+    background-image: url(../imagies/galery/Летний\ однодневный\ тур\ на\ остров\ Ольхон\ 2\ \(1\).jpg);
+}
+
+.galery-items:nth-child(11){
+    background-image: url(../imagies/galery/Зимний\ тур\ «Чивыркуйская\ сказка»\ \(1\).jpg);
+}
+.galery-items:nth-child(12){
+    background-image: url(../imagies/galery/Парк-отель\ «Байкальская\ Ривьера»\ \(1\).jpg);
+}
+
+.galery-items:nth-child(13){
+    background-image: url(../imagies/galery/Фотогалерея5\ \(1\)\ \(1\).jpg);
+}
+
+
+.galery-title{
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(23 / 18);
+    color: var(--first-color);
+}
+.galery-text{
+font-weight: 400;
+font-size: 16px;
+line-height: calc(21 / 16);
+color: var(--first-color);
 }
 
 /* Стилизация carta */
@@ -333,7 +447,7 @@ color:#76767A ;
 
 .photos-title{
     font-family: "PT Serif";
-    font-style: 700;
+    font-weight: 700;
     font-size: 30px;
     line-height: calc(39 / 30);
     color: var(--second-color);
