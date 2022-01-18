@@ -61,7 +61,7 @@ list-style: none;
 .section-phon{
     background-color: gray;
     background-image:url(../imagies/phon.jpg);
-    width: 1920px;
+    max-width: 1920px;
     background-size: cover;
 }
 
@@ -139,7 +139,17 @@ padding-bottom: 17px;
 .header-contact{
     display: flex;
 }
+.header-link{
+    display: flex;
+    align-items: center;
+}
 
+.icon-phone{
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    
+}
 /* Стилизация main */
 .main{
     padding-top: 20px;
@@ -279,7 +289,7 @@ flex-wrap: wrap;
 }
 
 .after-about-item::before{
-    display: block;
+    display: inline-block;
     content:"" ;
     height: 84px;
     width: 84px;
@@ -289,7 +299,7 @@ flex-wrap: wrap;
 }
 
 .after-about-item:nth-child(1)::before{
- background-image: url("../imagies/icons.svg#icon-Group-42");
+ background-image: url("../imagies/icons.svg#icon-Group-37");
 
 }
 
@@ -546,11 +556,13 @@ color: var(--second-color);
 }
 
 .spans{
-font-style: "PT Serif";
+font-family: "PT Serif";
 font-weight: 700;
 font-size:58px;
 line-height: calc(75 / 58);
 color: #64BD22;
+display: flex;
+justify-content: space-between;
 }
 
 .section-about-cont{
