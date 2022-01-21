@@ -1,570 +1,582 @@
-
-:root{
---first-color:#FFFFFF;
---btn-color:rgba(255, 255, 255, 0.5);
---second-color: #000000;
---text-color:#333333;
+:root {
+  --first-color: #ffffff;
+  --btn-color: rgba(255, 255, 255, 0.5);
+  --second-color: #000000;
+  --text-color: #333333;
 }
 
-
-body{
-    font-family: "Roboto", sans-serif ;
-
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
-p, h1, h2, h3, h4{
-    margin: 0;
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
+ul {
+  margin: 0;
+  padding: 0;
 }
-img{
-    display: block;
+img {
+  display: block;
 }
-.container{
-    width: 1120px;
-    /* padding-left: 15px;
+.container {
+  width: 1120px;
+  /* padding-left: 15px;
     padding-right: 15px; */
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.button{
-    cursor: pointer;
+.button {
+  cursor: pointer;
 }
 
-.link{
-    cursor: pointer;
-    text-decoration: none;
+.link {
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.list{
-list-style: none;
+.list {
+  list-style: none;
 }
 
 /* Стилизация хедера */
 
-.section-phon{
-    background-color: gray;
-    background-image:url(../imagies/phon.jpg);
-    max-width: 1920px;
-    background-size: cover;
+.section-phon {
+  background-color: gray;
+  background-image: url(../imagies/phon.jpg);
+  max-width: 1920px;
+  background-size: cover;
 }
 
-.header{
-    border-bottom: solid #D9D9DE;
-    border-width: 1px;
-    padding-top: 13px;
-    padding-bottom: 14px;
+.header {
+  border-bottom: solid #d9d9de;
+  border-width: 1px;
+  padding-top: 13px;
+  padding-bottom: 14px;
 }
 
-.header-container{
-    display: flex;
-    align-items: center;
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
-.header-img{
-    padding-top: 13px;
-    padding-bottom: 14px;
+.header-img {
+  padding-top: 13px;
+  padding-bottom: 14px;
 }
 
-.header-logos{
-    font-family: "PT Serif";
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.35;
-    color: var(--first-color);
-    margin-left: 20px;
-    margin-right: auto;
-    padding-top: 15px;
+.header-logos {
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.35;
+  color: var(--first-color);
+  margin-left: 20px;
+  margin-right: auto;
+  padding-top: 15px;
 }
 
-.header-logo{
-font-weight: 500;
-font-size: 18px;
-line-height:calc(21 / 18);
-color: var(--first-color);
-margin-left: 20px;
-margin-right: auto;
-padding-bottom: 17px;
+.header-logo {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  color: var(--first-color);
+  margin-left: 20px;
+  margin-right: auto;
+  padding-bottom: 17px;
 }
 
-.header-link{
-    font-weight: 700;
-    font-size: 18px;
-    line-height:calc(23 / 18);
-    color: var(--first-color);
-    margin-right: 69px;
-    margin-left: auto;
-    padding-top: 28px;
-    padding-bottom: 30px;
+.header-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(23 / 18);
+  color: var(--first-color);
+
+  margin-left: auto;
+  padding-top: 28px;
+  padding-bottom: 30px;
 }
 
-.header-contact:not(:last-child){
-    margin-right: 69px;
-    margin-left: auto;
+.header-contact:not(:last-child) {
+  margin-left: auto;
 }
 
-
-.header-btn{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(19 / 16);
-    color: var(--first-color);
-    min-width: 186px;
-    min-height: 44px;
-    border-radius: 22px;
-    border-color: var(--first-color);
-    padding: 15px 6px;
-    background-color: transparent;
-    border-width: 1px;
-    
+.header-btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: var(--first-color);
+  min-width: 186px;
+  min-height: 44px;
+  border-radius: 22px;
+  border-color: var(--first-color);
+  padding: 15px 6px;
+  background-color: transparent;
+  border-width: 1px;
 }
 
-
-.header-contact{
-    display: flex;
+.header-contact {
+  display: flex;
 }
-.header-link{
-    display: flex;
-    align-items: center;
+.header-link {
+  display: flex;
+  align-items: center;
+}
+.header-link:last-child {
+  margin-right: 45px;
 }
 
-.icon-phone{
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-    
+.icon-phone {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  margin-right: 13px;
 }
 /* Стилизация main */
-.main{
-    padding-top: 20px;
-    padding-bottom: 33px;
+.main {
+  padding-top: 20px;
+  padding-bottom: 33px;
 }
 
-
-.main-list{
-display: flex;
-justify-content: flex-start;
-margin-bottom: 106px;
-padding-top: 20px;
+.main-list {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 106px;
+  padding-top: 20px;
 }
-.main-link{
-font-weight: 400;
-font-size: 16px;
-line-height:calc(19 / 16);
-color: var(--first-color);
-margin-right: 32px;
-
+.main-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: var(--first-color);
+  margin-right: 32px;
 }
 
-.main-link:not(:last-child){
-    margin-right: 32px;
+.main-link:not(:last-child) {
+  margin-right: 32px;
 }
 
-.main-title{
-font-family: "PT Serif";
-font-weight: 700;
-font-size: 90px;
-line-height:calc(117 / 90);
-color: var(--first-color);
-max-width: 724px;
-margin-right: auto;
-margin-bottom: 8px;
+.main-title {
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-size: 90px;
+  line-height: calc(117 / 90);
+  color: var(--first-color);
+  max-width: 724px;
+  margin-right: auto;
+  margin-bottom: 8px;
 }
 
-.main-text{
-font-weight: 400;
-font-size: 20px;
-line-height:calc(28 / 20);
-color: var(--first-color);
-max-width: 562px;
-margin-bottom: 113px;
+.main-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  color: var(--first-color);
+  max-width: 562px;
+  margin-bottom: 113px;
 }
 
-.main-btn{
-font-weight: 500;
-font-size: 18px;
-line-height: 21px;
-color: var(--first-color);
-text-transform: uppercase;
-border-radius: 30px;
-border-color:var(--btn-color) ;
-min-width: 250px;
-min-height: 60px;
-background-color: transparent;
-padding: 19px 53px 20px;
-margin-bottom: 257px;
+.main-btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--first-color);
+  text-transform: uppercase;
+  border-radius: 30px;
+  border-color: var(--btn-color);
+  min-width: 250px;
+  min-height: 60px;
+  background-color: transparent;
+  padding: 19px 53px 20px;
+  margin-bottom: 257px;
 }
 
 /* Стилизация about */
 
-.about{
-    padding-top: 64px;
-    padding-bottom: 64px;
+.about {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
-.about-list{
-display: flex;
-flex-wrap: wrap;
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.about-item{
-   
-    max-width: 256px;
-    border-radius: 6px;
-    border: 1px solid #D9D9DE
+.about-item {
+  max-width: 256px;
+  border-radius: 6px;
+  border: 1px solid #d9d9de;
 }
 
-
-
-.about-item:not(:nth-child(4n)){
-    margin-right: 32px;
+.about-item:not(:nth-child(4n)) {
+  margin-right: 32px;
 }
 
-.about-item:not(:nth-last-child(-n+4)){
-    margin-bottom: 32px;
+.about-item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 32px;
 }
 
-.about-title{
-font-weight: 500;
-font-size: 16px;
-line-height:calc(19 / 16);
-color:var(--second-color) ;
-margin-bottom: 16px;
-padding-left: 19px;
-padding-right: 19px;
+.about-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: var(--second-color);
+  margin-bottom: 16px;
+  padding-left: 19px;
+  padding-right: 19px;
 }
 
-.about-img{
-    margin-bottom: 13px;
+.about-img {
+  margin-bottom: 13px;
 }
 
 /*  Стилизация after-about */
 
-.after-about{
-padding-top: 44px;
-padding-bottom: 80px;
+.after-about {
+  padding-top: 44px;
+  padding-bottom: 80px;
+  background-color: #e5e5e5;
 }
 
-.after-about-title{
-font-family: "PT Serif";
-font-weight: 700;
-font-size: 30px;
-line-height:calc(39 / 30);
-color: var(--second-color);
-text-align: center;
-margin-bottom: 50px;
+.after-about-title {
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: calc(39 / 30);
+  color: var(--second-color);
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.after-about-list{
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-flex-wrap: wrap;
-
+.after-about-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.after-about-item{
-    justify-content:center;
-align-items:center ;
-flex-wrap: wrap;
-
-
-
+.after-about-item {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 37px;
 }
 
-.after-about-item::before{
-    display: inline-block;
-    content:"" ;
-    height: 84px;
-    width: 84px;
-    
-    
+/* .after-about-item::before {
+  display: inline-block;
+  content: '';
+  height: 84px;
+  width: 84px;
+} */
 
+/* .after-about-item:nth-child(1)::before {
+  background-image: url('./imagies/icons.svg#icon-Group-37');
+} */
+
+.after-about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  color: var(--second-color);
+  max-width: 256px;
+  max-height: 65px;
 }
 
-.after-about-item:nth-child(1)::before{
- background-image: url("../imagies/icons.svg#icon-Group-37");
-
+.icons-after-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 84px;
+  margin-bottom: 16px;
 }
 
-.after-about-text{
-font-weight: 400;
-font-size: 16px;
-line-height:calc(21 / 16);
-color: var(--second-color);
-max-width: 256px;
-    max-height: 65px;
+/* Стилизация galery */
 
+.galery {
+  padding-top: 76px;
+  padding-bottom: 80px;
 }
 
- /* Стилизация galery */
-
-
-.galery{
-    padding-top: 76px;
-    padding-bottom: 80px;
+.galery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.galery-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.galery-items {
+  display: flex;
+  width: 256px;
+  height: 256px;
+  padding-left: 17px;
 }
 
-.galery-items{
-    display: flex;
-    width: 256px;
-    height: 256px; 
-    padding-left: 17px;
-    padding-top: 16px;  
-
+/* .title-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+} */
+.galery-items:not(:nth-child(-n + 4)) {
+  margin-bottom: 32px;
 }
-.galery-items:not(:nth-child(-n+4)){
-    margin-bottom: 32px;
-}
-
 
 .galery-items:nth-child(1) {
-    background-image: url(../imagies/galery/Зимний\ однодневный\ тур\ на\ Чивыркуйский\ залив\ 1\ \(2\)\ \(1\).jpg) ;
+  background-image: url(../imagies/galery/Зимний\ однодневный\ тур\ на\ Чивыркуйский\ залив.jpg);
 }
 
 .galery-items:nth-child(2) {
-    background-image: url(../imagies/galery/Зимний\ однодневный\ тур\ на\ остров\ Ольхон\ 2\ \(2\)\ \(1\).jpg);
+  background-image: url(../imagies/galery/Зимний\ однодневный\ тур\ на\ остров\ Ольхон.jpg);
 }
 
-.galery-items:nth-child(3){
-    background-image: url(../imagies/galery/Экскурсия\ в\ Иволгинский\ дацан\ 1\ \(2\)\ \(1\).jpg);
-width: 544px;
-height: 544px;
+.galery-items:nth-child(3) {
+  background-image: url(../imagies/galery/Экскурсия\ в\ Иволгинский\ дацан.jpg);
+  width: 544px;
+  height: 544px;
 }
 
-.galery-items:nth-child(4){
-    background-image: url(../imagies/galery/Обзорная\ экскурсия\ по\ Улан-Удэ\ 1\ \(2\)\ \(1\).jpg);
+.galery-items:nth-child(4) {
+  background-image: url(../imagies/galery/Обзорная\ экскурсия\ по\ Улан-Удэ.jpg);
 }
 
-.galery-items:nth-child(5){
-    background-image: url(../imagies/galery/Эко-отель\ «Байкальское\ шале»\ 1\ \(1\).jpg);
+.galery-items:nth-child(5) {
+  background-image: url(../imagies/galery/Эко-отель\ «Байкальское\ шале».jpg);
 }
-.galery-items:nth-child(6){
-    background-image: url(../imagies/galery/Летний\ однодневный\ тур\ в\ Чивыркуйский\ залив\ 1\ \(1\).jpg);
-}
-
-.galery-items:nth-child(7){
-    background-image: url(../imagies/galery/Отель\ «Белая\ Карета»\,\ с\ 1\ \(1\).jpg);
+.galery-items:nth-child(6) {
+  background-image: url(../imagies/galery/Летний\ однодневный\ тур\ в\ Чивыркуйский\ залив.jpg);
 }
 
-.galery-items:nth-child(8){
-    background-image: url(../imagies/galery/Однодневная\ поездка\ на\ Байкал\ «Байкальская\ Гавань»\ 1\ \(1\).jpg);
+.galery-items:nth-child(7) {
+  background-image: url(../imagies/galery/Отель\ «Белая\ Карета».jpg);
 }
 
-.galery-items:nth-child(9){
-    background-image: url(../imagies/galery/Парк-отель\ «Сагаан-Морин»\,\ с\ 1\ \(1\).jpg);
+.galery-items:nth-child(8) {
+  background-image: url(../imagies/galery/Однодневная\ поездка\ на\ Байкал\ «Байкальская\ Гавань».jpg);
 }
 
-.galery-items:nth-child(10){
-    background-image: url(../imagies/galery/Летний\ однодневный\ тур\ на\ остров\ Ольхон\ 2\ \(1\).jpg);
+.galery-items:nth-child(9) {
+  background-image: url(../imagies/galery/Парк-отель\ «Сагаан-Морин».jpg);
 }
 
-.galery-items:nth-child(11){
-    background-image: url(../imagies/galery/Зимний\ тур\ «Чивыркуйская\ сказка»\ \(1\).jpg);
-}
-.galery-items:nth-child(12){
-    background-image: url(../imagies/galery/Парк-отель\ «Байкальская\ Ривьера»\ \(1\).jpg);
+.galery-items:nth-child(10) {
+  background-image: url(../imagies/galery/Летний\ однодневный\ тур\ на\ остров\ Ольхон\ .jpg);
 }
 
-.galery-items:nth-child(13){
-    background-image: url(../imagies/galery/Фотогалерея5\ \(1\)\ \(1\).jpg);
+.galery-items:nth-child(11) {
+  background-image: url(../imagies/galery/Зимний\ тур\ «Чивыркуйская\ сказка».jpg);
+}
+.galery-items:nth-child(12) {
+  background-image: url(../imagies/galery/Парк-отель\ «Байкальская\ Ривьера».jpg);
 }
 
-
-.galery-title{
-    margin-bottom: 40px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: calc(23 / 18);
-    color: var(--first-color);
+.galery-items:nth-child(13) {
+  background-image: url(../imagies/galery/Фотогалерея.jpg);
 }
-.galery-text{
-font-weight: 400;
-font-size: 16px;
-line-height: calc(21 / 16);
-color: var(--first-color);
+
+.galery-titles {
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: calc(40 / 30);
+  margin-bottom: 40px;
+  color: var(--second-color);
+}
+.galery-title {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(23 / 18);
+  color: var(--first-color);
+}
+.galery-text {
+  display: flex;
+
+  margin-bottom: 19px;
+  margin-top: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  color: var(--first-color);
 }
 
 /* Стилизация carta */
 
-.carta{
-    padding-top: 70px;
-    padding-bottom: 84px;
+.carta {
+  padding-top: 70px;
+  padding-bottom: 84px;
 }
 
-.carta-title{
-font-family: "PT Serif";
-font-weight: 700;
-font-size: 30px;
-line-height: calc(39 / 30);
-color: var(--second-color);
-text-align: center;
-margin-bottom: 37px;
+.carta-title {
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: calc(39 / 30);
+  color: var(--second-color);
+  text-align: center;
+  margin-bottom: 37px;
 }
 
-.carta-titles{
-font-family: "PT Serif";
-font-weight: 700;
-font-size: 30px;
-line-height: calc(40 / 30);
-color: var(--second-color);    
+.carta-titles {
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: calc(40 / 30);
+  color: var(--second-color);
 }
 
-.carta-text{
-font-weight: 400;
-font-size: 18px;
-line-height:calc(25 / 18);
-color:var(--text-color) ;
+.carta-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  color: var(--text-color);
 }
 
-.carta-link{
-font-weight: 400;
-font-size: 16px;
-line-height:calc(19 / 16);
-color:#76767A ;
-
+.carta-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: #76767a;
 }
 
 /* Стилизация photos */
 
-.photos{
-    padding-top: 39px;
-    padding-bottom: 85px;
-    
+.photos {
+  padding-top: 39px;
+  padding-bottom: 85px;
+  background-color: #3fa9f5;
 }
 
-.photos-title{
-    font-family: "PT Serif";
-    font-weight: 700;
-    font-size: 30px;
-    line-height: calc(39 / 30);
-    color: var(--second-color);
+.photos-title {
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: calc(39 / 30);
+  color: var(--second-color);
 }
 
-.photos-link{
-font-weight: 400;
-font-size: 16px;
-line-height:calc(19 / 16);
-color:rgba#0050B2 ;
-
+.photos-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: rgba#0050B2;
 }
 
-.photos-btn{
-width: 44px;
-height: 44px;
-border-radius: 22px; 
-border-color:  #0061D9;
+.photos-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  border-color: #0061d9;
 }
 
-.photos-befor{
-    display: flex;
-    align-items: center;
-    margin-bottom: 52px;
-    justify-content: flex-end;
-}
-.photo-list-first{
-    display: flex;
-    
+.photos-icons {
+  width: 6px;
+  height: 12px;
 }
 
-.photo-item-first:not(:last-child){
-    margin-right: 16px;
+.photos-befor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 52px;
+  justify-content: flex-end;
+}
+.photo-list-first {
+  display: flex;
 }
 
-.photos-title{
-    margin-left: 0;
-    margin-right: auto;
+.photo-item-first:not(:last-child) {
+  margin-right: 16px;
 }
 
-.photos-link{
-    margin-right: 55px;
+.photos-title {
+  margin-left: 0;
+  margin-right: auto;
 }
 
-.photo-list-sec{
-    display: flex;
-    flex-wrap: wrap;
+.photos-link {
+  margin-right: 55px;
 }
 
-.photos-item{
-    width: 352px;
+.photo-list-sec {
+  display: flex;
+  flex-wrap: wrap;
 }
-.photos-item:not(:nth-child(3n)){
-    margin-right: 32px;
+
+.photos-item {
+  width: 352px;
 }
-.photos-item:not(:nth-last-child(-n+3)){
-    margin-bottom: 32px;
+.photos-item:not(:nth-child(3n)) {
+  margin-right: 32px;
+}
+.photos-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 32px;
 }
 
 /* Стилизация after-cart */
 
-.after-cart{
-    padding-top: 75px;
-    padding-bottom: 85px;
+.after-cart {
+  padding-top: 75px;
+  padding-bottom: 85px;
 }
 
-.after-cart-title{
-font-family: "PT Serif";
-font-weight: 700;
-font-size: 44px;
-line-height: calc(57 / 44);
-color: var(--second-color);
-text-align: center;
-margin-bottom: 45px;
+.after-cart-title {
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-size: 44px;
+  line-height: calc(57 / 44);
+  color: var(--second-color);
+  text-align: center;
+  margin-bottom: 45px;
 }
 
-.after-cart-text{
-font-weight: 400;
-font-size: 18px;
-line-height: calc(25 / 18);
-color: var(--text-color);
+.after-cart-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  color: var(--text-color);
 }
 
 /* Стилизация section-about */
 
-.section-about{
-    padding-top: 41px;
-    padding-bottom: 85px;
+.section-about {
+  padding-top: 41px;
+  padding-bottom: 85px;
 }
 
-.section-about-text{
-font-weight: 500;
-font-size: 20px;
-line-height: calc(26 / 20);
-color: var(--second-color);
+.section-about-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(26 / 20);
+  color: var(--second-color);
 }
 
-.spans{
-font-family: "PT Serif";
-font-weight: 700;
-font-size:58px;
-line-height: calc(75 / 58);
-color: #64BD22;
-display: flex;
-justify-content: space-between;
+.spans {
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-size: 58px;
+  line-height: calc(75 / 58);
+  color: #64bd22;
+  display: flex;
+  justify-content: space-between;
 }
 
-.section-about-cont{
-    display: flex;
+.section-about-cont {
+  display: flex;
 }
