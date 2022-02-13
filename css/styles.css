@@ -440,6 +440,7 @@ img {
 }
 .carta-div {
   position: relative;
+  margin-left: 32px;
 }
 .carta-svg {
   position: absolute;
