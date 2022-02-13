@@ -229,22 +229,14 @@ img {
 }
 
 .about-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
 }
 
 .about-item {
-  max-width: 256px;
   border-radius: 6px;
   border: 1px solid #d9d9de;
-}
-
-.about-item:not(:nth-child(4n)) {
-  margin-right: 32px;
-}
-
-.about-item:not(:nth-last-child(-n + 4)) {
-  margin-bottom: 32px;
 }
 
 .about-title {
@@ -266,7 +258,7 @@ img {
 .after-about {
   padding-top: 44px;
   padding-bottom: 80px;
-  background-color: #e5e5e5;
+  background-color: rgba(112, 207, 41, 0.07);
 }
 
 .after-about-title {
@@ -280,29 +272,10 @@ img {
 }
 
 .after-about-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 37px 33px;
 }
-
-.after-about-item {
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 37px;
-}
-
-/* .after-about-item::before {
-  display: inline-block;
-  content: '';
-  height: 84px;
-  width: 84px;
-} */
-
-/* .after-about-item:nth-child(1)::before {
-  background-image: url('./imagies/icons.svg#icon-Group-37');
-} */
 
 .after-about-text {
   font-weight: 400;
@@ -327,7 +300,16 @@ img {
 .galery {
   padding-top: 76px;
   padding-bottom: 80px;
-  border-bottom: 1px solid #d9d9de;
+  /* border-bottom: 1px solid #d9d9de; */
+}
+.galery-border {
+  position: absolute;
+  width: 1116px;
+  height: 0px;
+  bottom: -80px;
+  opacity: 0.4;
+  background: #c4c4c4;
+  border: 1px solid #d9d9de;
 }
 
 .galery-list {
@@ -335,76 +317,16 @@ img {
   gap: 32px;
 }
 
-.galery-items {
-  /* display: flex;
-  width: 256px;
-  height: 256px; */
-}
-
-.change {
+.galery-items:nth-child(3) {
   grid-row: 1 / 3;
   grid-column: 3 / 5;
 }
 
-/* 
-.galery-items:not(:nth-child(-n + 4)) {
-  margin-bottom: 32px;
-} */
-/* 
-.galery-items:nth-child(1) {
-  background-image: url(../imagies/galery/Зимний\ однодневный\ тур\ на\ Чивыркуйский\ залив.jpg);
-} */
-
-/* .galery-items:nth-child(2) {
-  background-image: url(../imagies/galery/Зимний\ однодневный\ тур\ на\ остров\ Ольхон.jpg);
-}
-
-.galery-items:nth-child(3) {
-  background-image: url(../imagies/galery/Экскурсия\ в\ Иволгинский\ дацан.jpg);
-  width: 544px;
-  height: 544px;
-}
-
-.galery-items:nth-child(4) {
-  background-image: url(../imagies/galery/Обзорная\ экскурсия\ по\ Улан-Удэ.jpg);
-}
-
-.galery-items:nth-child(5) {
-  background-image: url(../imagies/galery/Эко-отель\ «Байкальское\ шале».jpg);
-}
-.galery-items:nth-child(6) {
-  background-image: url(../imagies/galery/Летний\ однодневный\ тур\ в\ Чивыркуйский\ залив.jpg);
-}
-
-.galery-items:nth-child(7) {
-  background-image: url(../imagies/galery/Отель\ «Белая\ Карета».jpg);
-}
-
-.galery-items:nth-child(8) {
-  background-image: url(../imagies/galery/Однодневная\ поездка\ на\ Байкал\ «Байкальская\ Гавань».jpg);
-}
-
-.galery-items:nth-child(9) {
-  background-image: url(../imagies/galery/Парк-отель\ «Сагаан-Морин».jpg);
-}
-
-.galery-items:nth-child(10) {
-  background-image: url(../imagies/galery/Летний\ однодневный\ тур\ на\ остров\ Ольхон\ .jpg);
-}
-
-.galery-items:nth-child(11) {
-  background-image: url(../imagies/galery/Зимний\ тур\ «Чивыркуйская\ сказка».jpg);
-}
-.galery-items:nth-child(12) {
-  background-image: url(../imagies/galery/Парк-отель\ «Байкальская\ Ривьера».jpg);
-}
-
-.galery-items:nth-child(13) {
-  background-image: url(../imagies/galery/Фотогалерея.jpg);
-} */
-
 .galery-items {
   position: relative;
+}
+.galery-img {
+  width: 100%;
 }
 
 .galery-titles {
@@ -416,27 +338,60 @@ img {
   color: var(--second-color);
 }
 .galery-title {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+
   font-weight: 500;
   font-size: 18px;
   line-height: calc(23 / 18);
 
   color: var(--first-color);
 }
-.title-text {
-  /* display: flex; */
+.galery-text {
   position: absolute;
-  top: 16px;
-  left: 15px;
+  bottom: 19px;
+  left: 17px;
 
-  /* margin-bottom: 19px;
-  margin-top: auto; */
   font-weight: 400;
   font-size: 16px;
   line-height: calc(21 / 16);
   color: var(--first-color);
 }
+.container-galery {
+  position: relative;
+}
+.galery-all {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+}
+.galery-div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    180deg,
+    #000000 0%,
+    #ffffff 48.44%,
+    #ffffff 76.04%,
+    #000000 100%
+  );
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+  border-radius: 6px;
+}
 
-/* Стилизация carta */
+.galery-texts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  color: var(--first-color);
+}
 
 .carta {
   padding-top: 70px;
@@ -459,6 +414,7 @@ img {
   font-size: 30px;
   line-height: calc(40 / 30);
   color: var(--second-color);
+  margin-bottom: 21px;
 }
 
 .carta-text {
@@ -466,6 +422,7 @@ img {
   font-size: 18px;
   line-height: calc(25 / 18);
   color: var(--text-color);
+  margin-bottom: 10px;
 }
 
 .carta-link {
@@ -473,6 +430,54 @@ img {
   font-size: 16px;
   line-height: calc(19 / 16);
   color: #76767a;
+}
+
+.bajkal-main {
+  padding-bottom: 79px;
+}
+.bajkal {
+  display: flex;
+}
+.carta-div {
+  position: relative;
+}
+.carta-svg {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 160px;
+  left: 292px;
+}
+
+.read {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-decoration-line: underline;
+  color: #76767a;
+}
+.hide {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-decoration-line: underline;
+  color: #76767a;
+  display: none;
+}
+.carta-label {
+  margin-top: 50px;
+}
+.text-hidden {
+  display: none;
+}
+.carta-input:checked ~ .text-hidden {
+  display: block;
+}
+.carta-input:checked ~ .carta-label > .read {
+  display: none;
+}
+.carta-input:checked ~ .carta-label > .hide {
+  display: block;
 }
 
 /* Стилизация photos */
@@ -554,9 +559,13 @@ img {
 
 .after-cart {
   padding-top: 75px;
-  padding-bottom: 85px;
+  padding-bottom: 54px;
+  position: relative;
 }
 
+.after-cart-container {
+  display: flex;
+}
 .after-cart-title {
   font-family: 'PT Serif';
   font-weight: 700;
@@ -567,11 +576,36 @@ img {
   margin-bottom: 45px;
 }
 
+.after-cart-right {
+  width: 736px;
+  margin-left: 128px;
+}
+
 .after-cart-text {
   font-weight: 400;
   font-size: 18px;
   line-height: calc(25 / 18);
   color: var(--text-color);
+}
+.after-cart-photo {
+  position: relative;
+}
+.after-cart-second {
+  position: absolute;
+  top: 160px;
+  left: 96px;
+}
+.after-cart-container {
+  position: relative;
+}
+.after-cart-border {
+  position: absolute;
+  width: 1116px;
+  height: 0px;
+  bottom: 0;
+  opacity: 0.4;
+  background: #c4c4c4;
+  border: 1px solid #d9d9de;
 }
 
 /* Стилизация section-about */
@@ -599,5 +633,130 @@ img {
 }
 
 .section-about-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1.5fr;
+  gap: 20px;
+}
+/* -----------------form---------- */
+
+.form {
+  padding-top: 48px;
+  padding-bottom: 76px;
+  background: #f5f5f7;
+}
+
+.div-forma {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px 32px;
+
+  position: relative;
+}
+.form-title {
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1, 3;
+  text-align: center;
+  color: var(--second-color);
+  margin-bottom: 52px;
+}
+
+.form-input {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  padding-left: 14px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  color: #76767a;
+  background: #ffffff;
+  border: 1px solid #d9d9de;
+  width: 256px;
+  height: 44px;
+}
+.form-input-date {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  padding-left: 14px;
+  padding-top: 12px;
+  width: 153px;
+  height: 44px;
+  padding-bottom: 14px;
+  color: #76767a;
+  background: #ffffff;
+  border: 1px solid #d9d9de;
+}
+.form-labels {
+  grid-column: 1 / 2;
+}
+.form-label-area {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  padding-left: 14px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  color: #76767a;
+  background: #ffffff;
+  border: 1px solid #d9d9de;
+  width: 650px;
+  height: 114px;
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
+  resize: none;
+}
+.form-label-areas {
+  left: 183px;
+  position: absolute;
+  bottom: -4px;
+}
+.form-btn {
+  width: 297px;
+  height: 60px;
+  background-color: #0061d9;
+  border-radius: 30px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+
+  border: transparent;
+}
+.container-form {
+  width: 832px;
+  margin: 0 auto;
+}
+.label-check {
   display: flex;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  text-decoration-line: underline;
+  color: #76767a;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.input-check {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #76767a;
+  border-radius: 2px;
+  margin-right: 16px;
+}
+.form-check {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
 }

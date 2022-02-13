@@ -30,4 +30,7 @@
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.6842" d="M12.631 0v29.642"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.6842" d="M1.684 19.537l10.948 10.779 10.946-10.779"></path>
 </symbol>
+<symbol id="icon-Subtract" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" opacity="0.5" d="M16 32c-8.837 0-16-7.163-16-16s7.163-16 16-16c8.837 0 16 7.163 16 16s-7.163 16-16 16zM11.836 23.812l13.151-7.593-13.151-7.593v15.185z"></path>
+</symbol>
 </defs></svg>
